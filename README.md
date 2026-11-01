@@ -1,6 +1,7 @@
-# 🏛️ HỆ THỐNG QUẢN LÝ KÝ TÚC XÁ SINH VIÊN (KTX)
+# HỆ THỐNG QUẢN LÝ KÝ TÚC XÁ SINH VIÊN
 
-Ứng dụng Desktop chuyên nghiệp quản lý toàn diện Ký túc xá sinh viên, được xây dựng chính xác theo sơ đồ cơ sở dữ liệu quan hệ gồm **10 bảng**:
+Ứng dụng Desktop chuyên nghiệp quản lý toàn diện Ký túc xá sinh viên bằng Python (Tkinter) và CSDL SQLite, được xây dựng chính xác theo sơ đồ cơ sở dữ liệu quan hệ gồm **10 bảng**:
+
 1. `sinhvien`: Hồ sơ sinh viên nội trú.
 2. `phong`: Danh mục phòng ký túc xá, loại phòng, đơn giá, sức chứa.
 3. `dangky_phong`: Xếp phòng sinh viên, ngày bắt đầu, ngày kết thúc.
@@ -30,7 +31,6 @@ erDiagram
 
     sinhvien {
         string MaSV PK
-        string HoTen
         string SoCMT
         date NgaySinh
         string Lop
@@ -113,11 +113,23 @@ erDiagram
 
 ---
 
+## 🔑 Hướng Dẫn Đăng Nhập
+
+Hệ thống tự động xác định vai trò đăng nhập dựa trên tài khoản nhập mặc định vào:
+
+Tài khoản quản trị viên		Tên : admin		Password : 123456
+Tài khoản quản lí KTX		Tên : quanli1		Password : 123456
+Tài khoản sinh viên		Tên : mã căn cước	Password : 123456
+
+Tài khoản quản trị viên có quyền thêm/sửa/xóa các tài khoaản quản lí.a
+
+---
+
 ## 🚀 Cách Chạy Ứng Dụng
 
-Mở Terminal và chạy lệnh:
+Mở Terminal hoặc Command Prompt tại **thư mục gốc của dự án** và chạy lệnh:
+
 ```bash
-cd /Users/tranhoang/.gemini/antigravity/scratch/student-management-app
-python3 main.py
+python main.py
 ```
-*(Hoặc dùng lệnh `open /Users/tranhoang/.gemini/antigravity/scratch/student-management-app` để mở thư mục trong Finder)*
+*(Hoặc `python3 main.py` tùy thuộc vào phiên bản cài đặt trên máy của bạn).*
