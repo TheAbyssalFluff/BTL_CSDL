@@ -1,0 +1,11 @@
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS system files
+.DS_Store
+
+# SQLite Database (nếu không muốn lưu trữ dữ liệu thay đổi lên git)
+# data/*.db
