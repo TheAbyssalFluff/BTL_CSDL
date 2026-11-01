@@ -117,9 +117,9 @@ erDiagram
 
 Hệ thống tự động xác định vai trò đăng nhập dựa trên tài khoản nhập mặc định vào:
 
-Tài khoản quản trị viên		Tên : admin		Password : 123456
+Tài khoản quản trị viên		Tên : admin		    Password : 123456
 Tài khoản quản lí KTX		Tên : quanli1		Password : 123456
-Tài khoản sinh viên		Tên : mã căn cước	Password : 123456
+Tài khoản sinh viên		    Tên : mã căn cước	Password : 123456
 
 Tài khoản quản trị viên có quyền thêm/sửa/xóa các tài khoaản quản lí.a
 
